@@ -10,6 +10,15 @@ scp -i  identity                             -> scp -i /root/.ssh/id_rsa /root/c
 scp -P  port default port is 22         ->  scp -P 22 snap root@192.168.187.137:/root/
 scp -o option 
 
+# Move file 
+mv GIT_command.sh ../TOOLS-codes-github    <--one step back to paste in this DIR TOOLS-codes-github
+
+# Rename files
+touch ruby
+root@jenkins:~# mv ruby RUBYADHANA
+root@jenkins:~# ls
+copy.yml  Desktop  Downloads  github  RUBYADHANA  TOOLS-CODE-TO-GITHUBB
+
 # key generate 
 ssh-keygen
 ssh-copy-id root@192.168.187.135
