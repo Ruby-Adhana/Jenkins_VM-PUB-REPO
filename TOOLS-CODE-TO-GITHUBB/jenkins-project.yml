@@ -1,0 +1,13 @@
+---
+- name: upload file
+  hosts: all
+  tasks:
+    - name: place custom file
+      copy:
+       src: /var/lib/jenkins/workspace/project-job/ruby.html
+       dest: /var/www/html/ruby.html
+    
+    - name: start service
+      service:
+        name: apache2
+        state: restarted
